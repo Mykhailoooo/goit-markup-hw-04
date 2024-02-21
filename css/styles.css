@@ -401,14 +401,14 @@ img {
   color: #f4f4fd;
 }
 .footer-title {
-  color: var(--WHITE, #fff);
+  color: #ffffff;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.32px;
-  margin: 0 auto 16px 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
 .footer-icon-list {
@@ -416,6 +416,7 @@ img {
   justify-content: center;
   gap: 16px;
   padding: 0 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon-item {
   width: 40px;
@@ -436,6 +437,9 @@ img {
 .footer-icon-link:hover {
   background-color: #31d0aa;
 }
+.footer-icon-link:focus {
+  background-color: #31d0aa;
+}
 
 .footer-block {
   display: flex;
@@ -446,4 +450,7 @@ img {
   max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+}
+.footer-container {
+  margin-right: 120px;
 }
