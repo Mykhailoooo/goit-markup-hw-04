@@ -249,7 +249,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office\ 1.jpg);
+    url(../images/people-office.jpg);
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -289,6 +289,7 @@ img {
   justify-content: center;
   gap: 24px;
   padding: 0 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-item {
   width: 40px;
