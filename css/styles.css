@@ -27,6 +27,8 @@ img {
 }
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .container {
   width: 100%;
@@ -49,6 +51,21 @@ img {
   display: flex;
   align-items: center;
 }
+.navigation .link-after {
+  position: relative;
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation .link-after::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
 
 .header-navigation {
   display: flex;
@@ -60,6 +77,9 @@ img {
   display: flex;
   gap: 40px;
   margin: 24 156 24 332;
+}
+.address .address-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -86,6 +106,7 @@ img {
 
   margin-right: 76px;
 }
+
 .navigation .link {
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -147,6 +168,7 @@ img {
   margin: 0 auto;
   min-width: 169px;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
@@ -224,8 +246,8 @@ img {
 .first-section {
   background-color: #2e2f42;
   background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7) 0%,
-      rgba(46, 47, 66, 0.7) 100%
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office\ 1.jpg);
   background-repeat: no-repeat;
@@ -235,6 +257,7 @@ img {
   align-items: center;
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
 }
 
 .our-team-section {
