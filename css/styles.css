@@ -425,7 +425,6 @@ img {
   display: flex;
   justify-content: center;
   gap: 16px;
-  padding: 0 16px;
 }
 .footer-icon-item {
   width: 40px;
